@@ -3,7 +3,7 @@ import { PageTransition } from "@/components/PageTransition";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { GradientBlob } from "@/components/GradientBlob";
 import { Canvas } from "@react-three/fiber";
-import { Float, Text3D, Center } from "@react-three/drei";
+import { Float, Sphere, MeshDistortMaterial, OrbitControls } from "@react-three/drei";
 import { Card } from "@/components/ui/card";
 
 const skillsData = [
@@ -39,26 +39,31 @@ const skillsData = [
   },
 ];
 
-const FloatingSkill = ({ text, position }: { text: string; position: [number, number, number] }) => {
+const FloatingSkillSphere = ({ position, color }: { position: [number, number, number]; color: string }) => {
   return (
-    <Float speed={2} rotationIntensity={0.5} floatIntensity={1}>
-      <Center position={position}>
-        <Text3D
-          font="/fonts/helvetiker_regular.typeface.json"
-          size={0.3}
-          height={0.1}
-          curveSegments={12}
-        >
-          {text}
-          <meshStandardMaterial color="#00ffff" emissive="#00ffff" emissiveIntensity={0.5} />
-        </Text3D>
-      </Center>
+    <Float speed={2 + Math.random()} rotationIntensity={0.5} floatIntensity={1.5}>
+      <Sphere args={[0.4, 32, 32]} position={position}>
+        <MeshDistortMaterial
+          color={color}
+          attach="material"
+          distort={0.3}
+          speed={2}
+          roughness={0}
+          metalness={0.8}
+        />
+      </Sphere>
     </Float>
   );
 };
 
 const Skills3D = () => {
-  const skills3D = ["React", "Node", "TS", "CSS", "JS"];
+  const skillSpheres = [
+    { color: "#00ffff", position: [2, 1, 0] },
+    { color: "#a855f7", position: [-2, -1, 0] },
+    { color: "#ff00ff", position: [0, 2, -1] },
+    { color: "#00ffff", position: [-1.5, 0, 1] },
+    { color: "#a855f7", position: [1.5, -1.5, 0.5] },
+  ];
   
   return (
     <Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
@@ -66,17 +71,15 @@ const Skills3D = () => {
       <pointLight position={[10, 10, 10]} intensity={1} color="#00ffff" />
       <pointLight position={[-10, -10, -10]} intensity={0.5} color="#a855f7" />
       
-      {skills3D.map((skill, i) => (
-        <FloatingSkill
-          key={skill}
-          text={skill}
-          position={[
-            Math.cos((i / skills3D.length) * Math.PI * 2) * 3,
-            Math.sin((i / skills3D.length) * Math.PI * 2) * 2,
-            0,
-          ]}
+      {skillSpheres.map((sphere, i) => (
+        <FloatingSkillSphere
+          key={i}
+          position={sphere.position as [number, number, number]}
+          color={sphere.color}
         />
       ))}
+
+      <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
     </Canvas>
   );
 };
