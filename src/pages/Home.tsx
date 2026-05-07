@@ -35,7 +35,7 @@ const Home = () => {
               >
                 <span className="text-gradient glow-primary">Hi, I'm</span>
                 <br />
-                <span className="text-foreground">Your Name</span>
+                <span className="text-foreground">Jayaswuroopa V</span>
               </motion.h1>
 
               <motion.div
@@ -46,13 +46,13 @@ const Home = () => {
               >
                 <TypeAnimation
                   sequence={[
+                    "Computer Science Engineering Student",
+                    2000,
                     "Full Stack Developer",
                     2000,
-                    "UI/UX Designer",
+                    "AI & Machine Learning Enthusiast",
                     2000,
                     "Problem Solver",
-                    2000,
-                    "Tech Enthusiast",
                     2000,
                   ]}
                   wrapper="span"
@@ -68,8 +68,9 @@ const Home = () => {
                 transition={{ delay: 0.6 }}
                 className="text-lg text-muted-foreground max-w-xl"
               >
-                Crafting digital experiences with modern technologies. Passionate about building
-                innovative solutions that make a difference.
+                I am a Computer Science undergraduate passionate about building scalable web
+                applications and intelligent AI-based systems using React.js, Node.js, MongoDB,
+                Java, Python and Deep Learning with PyTorch.
               </motion.p>
 
               <motion.div

@@ -7,32 +7,34 @@ import { Card } from "@/components/ui/card";
 
 const timelineData = [
   {
-    year: "2024",
-    title: "Senior Developer",
-    company: "Tech Company",
-    description: "Leading development of cutting-edge web applications",
+    year: "2025",
+    title: "Java Full Stack Intern",
+    company: "Litz Tech",
+    description:
+      "Worked on Java full-stack development, debugged backend issues and improved application stability while collaborating with the team.",
     icon: Briefcase,
   },
   {
-    year: "2022",
-    title: "Full Stack Developer",
-    company: "StartUp Inc",
-    description: "Built scalable solutions for enterprise clients",
-    icon: Briefcase,
+    year: "2025",
+    title: "100+ LeetCode Problems",
+    company: "Problem Solving",
+    description:
+      "Solved 100+ LeetCode problems and earned HackerRank Java & Problem Solving certifications.",
+    icon: Award,
   },
   {
-    year: "2020",
-    title: "Bachelor's Degree",
-    company: "University Name",
-    description: "Computer Science & Engineering",
+    year: "2023",
+    title: "B.E. Computer Science & Engineering",
+    company: "KPR Institute of Engineering and Technology",
+    description: "Currently pursuing B.E. in CSE (2023 – 2027) with a CGPA of 8.4.",
     icon: GraduationCap,
   },
   {
-    year: "2019",
-    title: "First Achievement",
-    company: "Hackathon Winner",
-    description: "Won first place in national coding competition",
-    icon: Award,
+    year: "2021",
+    title: "Higher Secondary Education",
+    company: "GRG Matriculation Higher Secondary School",
+    description: "Completed Higher Secondary Education (2021 – 2023) with 94%.",
+    icon: GraduationCap,
   },
 ];
 
@@ -53,7 +55,7 @@ const About = () => {
           <div className="text-center space-y-4">
             <h1 className="text-5xl md:text-6xl font-bold text-gradient">About Me</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Passionate developer with a mission to create impactful digital experiences
+              Computer Science undergraduate passionate about full stack development and AI
             </p>
           </div>
 
@@ -66,18 +68,17 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6 text-primary">My Story</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with expertise in building modern web applications.
-                My journey in tech started with curiosity and has evolved into a deep commitment to
-                creating elegant, efficient, and user-friendly solutions.
+                I am currently pursuing B.E. Computer Science and Engineering at KPR Institute of
+                Engineering and Technology with a CGPA of 8.4.
               </p>
               <p>
-                With a strong foundation in both frontend and backend technologies, I specialize in
-                React, Node.js, and cloud architectures. I thrive on solving complex problems and
-                turning ideas into reality through clean, maintainable code.
+                I enjoy solving real-world problems using software development and artificial
+                intelligence. My interests include full-stack web development, deep learning,
+                computer vision, and backend systems.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to
-                open-source projects, or sharing knowledge with the developer community.
+                I have solved 100+ LeetCode problems which strengthened my problem-solving and
+                programming skills, and I love turning ideas into scalable applications.
               </p>
             </div>
           </motion.div>
