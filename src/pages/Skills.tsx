@@ -8,33 +8,55 @@ import { Card } from "@/components/ui/card";
 
 const skillsData = [
   {
+    category: "Programming Languages",
+    skills: [
+      { name: "Java", level: 88 },
+      { name: "Python", level: 85 },
+      { name: "JavaScript", level: 85 },
+    ],
+  },
+  {
     category: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "TypeScript", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "Framer Motion", level: 88 },
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 90 },
+      { name: "React.js", level: 88 },
+      { name: "Tailwind CSS", level: 85 },
     ],
   },
   {
-    category: "Backend",
+    category: "Backend & Frameworks",
     skills: [
-      { name: "Node.js", level: 90 },
-      { name: "Express", level: 85 },
-      { name: "PostgreSQL", level: 80 },
+      { name: "Node.js", level: 82 },
+      { name: "Express.js", level: 80 },
+      { name: "Django", level: 75 },
+      { name: "Flask", level: 75 },
+    ],
+  },
+  {
+    category: "Database",
+    skills: [
       { name: "MongoDB", level: 82 },
-      { name: "GraphQL", level: 75 },
+      { name: "SQL", level: 80 },
     ],
   },
   {
-    category: "Tools & Others",
+    category: "AI / ML",
     skills: [
-      { name: "Git", level: 92 },
-      { name: "Docker", level: 78 },
-      { name: "AWS", level: 75 },
-      { name: "CI/CD", level: 80 },
-      { name: "Testing", level: 85 },
+      { name: "PyTorch", level: 80 },
+      { name: "Deep Learning", level: 78 },
+      { name: "Image Classification", level: 80 },
+    ],
+  },
+  {
+    category: "Core Subjects & Tools",
+    skills: [
+      { name: "Data Structures", level: 88 },
+      { name: "OOP", level: 88 },
+      { name: "Operating Systems", level: 80 },
+      { name: "Git", level: 85 },
+      { name: "Linux", level: 78 },
+      { name: "VS Code", level: 90 },
     ],
   },
 ];
