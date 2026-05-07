@@ -63,13 +63,26 @@ const ProjectCard = ({ project, index }: { project: typeof projectsData[0]; inde
             animate={{ opacity: isHovered ? 1 : 0 }}
             className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent flex items-end p-4 gap-2"
           >
-            <Button size="sm" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10">
-              <Github className="w-4 h-4 mr-2" />
-              Code
+            <Button
+              asChild
+              size="sm"
+              variant="outline"
+              className="border-primary/50 text-primary hover:bg-primary/10"
+            >
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                Code
+              </a>
             </Button>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <ExternalLink className="w-4 h-4 mr-2" />
-              Live Demo
+            <Button
+              asChild
+              size="sm"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Live Demo
+              </a>
             </Button>
           </motion.div>
         </div>
