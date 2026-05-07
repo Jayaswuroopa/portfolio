@@ -158,7 +158,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-primary mb-1">Email</h3>
-                    <p className="text-muted-foreground">your.email@example.com</p>
+                    <p className="text-muted-foreground break-all">v.jayaswuroopa@gmail.com</p>
                   </div>
                 </div>
               </Card>
@@ -170,7 +170,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-secondary mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+91 97896 16456</p>
                   </div>
                 </div>
               </Card>
@@ -182,7 +182,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-accent mb-1">Location</h3>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Coimbatore, Tamil Nadu, India</p>
                   </div>
                 </div>
               </Card>
@@ -190,12 +190,12 @@ const Contact = () => {
               <Card className="p-8 gradient-border backdrop-blur-sm bg-card/50">
                 <h3 className="text-xl font-bold text-primary mb-4">Let's Connect</h3>
                 <p className="text-muted-foreground mb-4">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be
-                  part of your vision. Feel free to reach out!
+                  I'm always open to discussing new projects, internships, AI/ML collaborations, or
+                  full-stack development opportunities. Feel free to reach out!
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary border border-primary/20">
-                    Available for freelance
+                    Open to internships
                   </span>
                   <span className="px-3 py-1 text-sm rounded-full bg-secondary/10 text-secondary border border-secondary/20">
                     Open to collaborations

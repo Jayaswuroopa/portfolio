@@ -61,8 +61,10 @@ const Resume = () => {
                   <FileText className="w-8 h-8" />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-primary">Your Name</h2>
-                  <p className="text-muted-foreground">Full Stack Developer</p>
+                  <h2 className="text-3xl font-bold text-primary">Jayaswuroopa V</h2>
+                  <p className="text-muted-foreground">
+                    Full Stack Developer & AI/ML Enthusiast
+                  </p>
                 </div>
               </div>
 
@@ -70,9 +72,10 @@ const Resume = () => {
                 <section>
                   <h3 className="text-2xl font-bold text-primary mb-4">Summary</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Passionate full-stack developer with 5+ years of experience building modern web
-                    applications. Proficient in React, Node.js, and cloud technologies. Strong focus
-                    on creating efficient, scalable solutions and exceptional user experiences.
+                    Computer Science undergraduate at KPR Institute of Engineering and Technology
+                    (CGPA 8.4) passionate about full-stack web development and AI/ML. Experienced
+                    with React.js, Node.js, MongoDB, Java, Python and Deep Learning using PyTorch.
+                    Solved 100+ LeetCode problems.
                   </p>
                 </section>
 
@@ -80,22 +83,15 @@ const Resume = () => {
                   <h3 className="text-2xl font-bold text-primary mb-4">Experience</h3>
                   <div className="space-y-6">
                     <div>
-                      <h4 className="text-xl font-semibold text-foreground">Senior Developer</h4>
-                      <p className="text-sm text-secondary mb-2">Tech Company • 2022 - Present</p>
+                      <h4 className="text-xl font-semibold text-foreground">
+                        Java Full Stack Intern
+                      </h4>
+                      <p className="text-sm text-secondary mb-2">Litz Tech • 2025</p>
                       <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                        <li>Led development of enterprise web applications</li>
-                        <li>Mentored junior developers and conducted code reviews</li>
-                        <li>Improved application performance by 40%</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-xl font-semibold text-foreground">Full Stack Developer</h4>
-                      <p className="text-sm text-secondary mb-2">StartUp Inc • 2020 - 2022</p>
-                      <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                        <li>Built scalable solutions for enterprise clients</li>
-                        <li>Implemented CI/CD pipelines and automated testing</li>
-                        <li>Collaborated with cross-functional teams</li>
+                        <li>Worked on Java full-stack application development</li>
+                        <li>Assisted in debugging backend issues</li>
+                        <li>Improved application stability and functionality</li>
+                        <li>Collaborated with team members to implement features</li>
                       </ul>
                     </div>
                   </div>
@@ -103,18 +99,38 @@ const Resume = () => {
 
                 <section>
                   <h3 className="text-2xl font-bold text-primary mb-4">Education</h3>
-                  <div>
-                    <h4 className="text-xl font-semibold text-foreground">Bachelor of Science in Computer Science</h4>
-                    <p className="text-sm text-secondary">University Name • 2016 - 2020</p>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground">
+                        B.E. Computer Science and Engineering
+                      </h4>
+                      <p className="text-sm text-secondary">
+                        KPR Institute of Engineering and Technology • 2023 – 2027 • CGPA: 8.4
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground">
+                        Higher Secondary Education
+                      </h4>
+                      <p className="text-sm text-secondary">
+                        GRG Matriculation Higher Secondary School • 2021 – 2023 • 94%
+                      </p>
+                    </div>
                   </div>
                 </section>
 
                 <section>
-                  <h3 className="text-2xl font-bold text-primary mb-4">Certifications</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-4">
+                    Certifications & Achievements
+                  </h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• AWS Certified Solutions Architect</li>
-                    <li>• Google Cloud Professional Developer</li>
-                    <li>• MongoDB Certified Developer</li>
+                    <li>• Solved 100+ LeetCode Problems</li>
+                    <li>• HackerRank Java Certification (2025)</li>
+                    <li>• Problem Solving Certification (2025)</li>
+                    <li>• NPTEL Cyber Security and Privacy (2024)</li>
+                    <li>
+                      • Infosys Certifications: Computer Vision, NLP, Deep Learning, AI Fundamentals
+                    </li>
                   </ul>
                 </section>
               </div>

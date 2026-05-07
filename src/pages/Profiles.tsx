@@ -3,50 +3,36 @@ import { PageTransition } from "@/components/PageTransition";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { GradientBlob } from "@/components/GradientBlob";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Twitter, Code2, Youtube, Instagram } from "lucide-react";
+import { Github, Linkedin, Code2, Mail } from "lucide-react";
 
 const profilesData = [
   {
     name: "GitHub",
     icon: Github,
-    url: "https://github.com/yourusername",
+    url: "https://github.com/Jayaswuroopa",
     description: "View my open source contributions and projects",
     color: "primary",
   },
   {
     name: "LeetCode",
     icon: Code2,
-    url: "https://leetcode.com/yourusername",
-    description: "Check out my coding challenges and solutions",
+    url: "https://leetcode.com/u/jaya2006/",
+    description: "100+ problems solved — view my solutions",
     color: "secondary",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/jayaswuroopa-v-61577930a/",
     description: "Connect with me professionally",
     color: "accent",
   },
   {
-    name: "Twitter",
-    icon: Twitter,
-    url: "https://twitter.com/yourusername",
-    description: "Follow me for tech insights and updates",
+    name: "Email",
+    icon: Mail,
+    url: "mailto:v.jayaswuroopa@gmail.com",
+    description: "v.jayaswuroopa@gmail.com",
     color: "primary",
-  },
-  {
-    name: "YouTube",
-    icon: Youtube,
-    url: "https://youtube.com/@yourusername",
-    description: "Watch my coding tutorials and tech talks",
-    color: "secondary",
-  },
-  {
-    name: "Instagram",
-    icon: Instagram,
-    url: "https://instagram.com/yourusername",
-    description: "Behind the scenes of my dev journey",
-    color: "accent",
   },
 ];
 
