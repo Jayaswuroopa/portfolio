@@ -111,9 +111,23 @@ const Home = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="h-[500px] lg:h-[600px] relative"
+              className="h-[500px] lg:h-[600px] relative flex items-center justify-center"
             >
-              <Scene3D />
+              <div className="absolute inset-0 z-0 opacity-40">
+                <Scene3D />
+              </div>
+              <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-[0_0_50px_rgba(var(--primary),0.3)] group transition-all duration-500 hover:scale-105">
+                <img 
+                  src="/profile.jpeg" 
+                  alt="Jayaswuroopa V" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-96 md:h-96 border-2 border-dashed border-primary/20 rounded-full animate-spin-slow pointer-events-none" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:w-[400px] md:h-[400px] border border-secondary/10 rounded-full animate-reverse-spin-slow pointer-events-none" />
             </motion.div>
           </div>
         </div>

@@ -14,17 +14,17 @@ const projectsData = [
       "Deep learning based suspicious activity detection system using image classification with a fine-tuned MobileNetV2 model and a full preprocessing & inference pipeline.",
     image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&h=500&fit=crop",
     tech: ["Python", "PyTorch", "MobileNetV2", "Computer Vision"],
-    github: "https://github.com/Jayaswuroopa",
-    live: "#",
+    github: "https://github.com/Jayaswuroopa/Threat-detector",
+    live: "/demo/threat-detector",
   },
   {
     title: "AI Resume Analyzer",
     description:
       "AI-powered resume analyzer that parses resumes, extracts key skills and experience, and scores candidates against job descriptions using NLP techniques.",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=500&fit=crop",
-    tech: ["Python", "NLP", "Flask", "Deep Learning"],
-    github: "https://github.com/Jayaswuroopa",
-    live: "#",
+    tech: ["React.js", "Node.js", "MongoDB", "NLP"],
+    github: "https://github.com/Jayaswuroopa/mern-stack-AI-resume-analyzer-",
+    live: "/demo/resume-analyzer",
   },
   {
     title: "Inventory Management System",
@@ -32,8 +32,8 @@ const projectsData = [
       "Full-stack inventory management application with stock tracking, role-based access, dashboards and reusable UI components for smooth product management.",
     image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=500&fit=crop",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    github: "https://github.com/Jayaswuroopa",
-    live: "#",
+    github: "https://github.com/Jayaswuroopa/smart-inventory-management",
+    live: "/demo/inventory-system",
   },
 ];
 
@@ -79,7 +79,7 @@ const ProjectCard = ({ project, index }: { project: typeof projectsData[0]; inde
               size="sm"
               className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
+              <a href={project.live} rel="noopener noreferrer">
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Live Demo
               </a>

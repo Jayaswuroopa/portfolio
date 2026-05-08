@@ -3,7 +3,7 @@ import { PageTransition } from "@/components/PageTransition";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { GradientBlob } from "@/components/GradientBlob";
 import { Button } from "@/components/ui/button";
-import { Download, FileText } from "lucide-react";
+import { Download, FileText, Mail, Linkedin, Github, Code2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Resume = () => {
@@ -62,9 +62,23 @@ const Resume = () => {
                 </div>
                 <div>
                   <h2 className="text-3xl font-bold text-primary">Jayaswuroopa V</h2>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground mb-4">
                     Full Stack Developer & AI/ML Enthusiast
                   </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <a href="mailto:v.jayaswuroopa@gmail.com" className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+                      <Mail className="w-4 h-4" /> v.jayaswuroopa@gmail.com
+                    </a>
+                    <a href="#" className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+                      <Linkedin className="w-4 h-4" /> LinkedIn
+                    </a>
+                    <a href="#" className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+                      <Github className="w-4 h-4" /> GitHub
+                    </a>
+                    <a href="#" className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+                      <Code2 className="w-4 h-4" /> LeetCode
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -115,6 +129,50 @@ const Resume = () => {
                       <p className="text-sm text-secondary">
                         GRG Matriculation Higher Secondary School • 2021 – 2023 • 94%
                       </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3 className="text-2xl font-bold text-primary mb-4">Skills</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-muted-foreground">
+                    <div><strong className="text-foreground">Languages:</strong> Java, Python, JavaScript</div>
+                    <div><strong className="text-foreground">Frontend:</strong> HTML, CSS, React.js, Tailwind CSS</div>
+                    <div><strong className="text-foreground">Backend:</strong> Node.js, Express.js</div>
+                    <div><strong className="text-foreground">Frameworks:</strong> Django, Flask</div>
+                    <div><strong className="text-foreground">Database:</strong> MongoDB, SQL</div>
+                    <div><strong className="text-foreground">AI/ML:</strong> PyTorch, Deep Learning, Image Classification</div>
+                    <div><strong className="text-foreground">Core:</strong> Data Structures, OOP, Operating Systems</div>
+                    <div><strong className="text-foreground">Tools:</strong> Git, Linux, VS Code</div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3 className="text-2xl font-bold text-primary mb-4">Projects</h3>
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground">SmartCart – E-Commerce Web Application</h4>
+                      <ul className="list-disc list-inside space-y-1 text-muted-foreground mt-2">
+                        <li>Built a full-stack web application using React.js, Node.js, and Express.js.</li>
+                        <li>Implemented authentication and shopping cart functionality for user interaction.</li>
+                        <li>Designed reusable UI components for better code structure and maintainability.</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground">Suspicious Activity Detection System</h4>
+                      <ul className="list-disc list-inside space-y-1 text-muted-foreground mt-2">
+                        <li>Developed a deep learning model using PyTorch (MobileNetV2) for image classification.</li>
+                        <li>Worked with image datasets and applied preprocessing and augmentation techniques.</li>
+                        <li>Built a basic inference pipeline for detecting suspicious activities.</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground">Smart Crop Monitoring System</h4>
+                      <ul className="list-disc list-inside space-y-1 text-muted-foreground mt-2">
+                        <li>Developed an IoT-based monitoring system using Arduino sensors.</li>
+                        <li>Collected environmental data such as soil moisture, temperature, and humidity.</li>
+                        <li>Implemented a rule-based system for fertilizer recommendation.</li>
+                      </ul>
                     </div>
                   </div>
                 </section>

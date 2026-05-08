@@ -95,6 +95,7 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
         "spin-slow": "spin-slow 20s linear infinite",
+        "reverse-spin-slow": "spin-slow 25s linear infinite reverse",
         "fade-in-up": "fade-in-up 0.6s ease-out",
       },
     },
