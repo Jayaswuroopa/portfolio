@@ -5,6 +5,7 @@ import { GradientBlob } from "@/components/GradientBlob";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const projectsData = [
@@ -79,10 +80,10 @@ const ProjectCard = ({ project, index }: { project: typeof projectsData[0]; inde
               size="sm"
               className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              <a href={project.live} rel="noopener noreferrer">
+              <Link to={project.live}>
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Live Demo
-              </a>
+              </Link>
             </Button>
           </motion.div>
         </div>

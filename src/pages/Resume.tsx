@@ -10,7 +10,7 @@ const Resume = () => {
   const handleDownload = () => {
     // In a real app, this would download the actual PDF
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // Place your resume PDF in the public folder
+    link.href = `${import.meta.env.BASE_URL}resume.pdf`; // Place your resume PDF in the public folder
     link.download = "Resume.pdf";
     link.click();
   };

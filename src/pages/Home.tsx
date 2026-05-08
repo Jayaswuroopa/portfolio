@@ -118,7 +118,7 @@ const Home = () => {
               </div>
               <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-[0_0_50px_rgba(var(--primary),0.3)] group transition-all duration-500 hover:scale-105">
                 <img 
-                  src="/profile.jpeg" 
+                  src={`${import.meta.env.BASE_URL}profile.jpeg`} 
                   alt="Jayaswuroopa V" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
